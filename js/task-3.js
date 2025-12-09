@@ -1,8 +1,13 @@
-const inputText = document.querySelector(".task-3-input");
-const spanText = document.querySelector(".task-3-span");
+const inputText = document.querySelector("#name-input");
+const spanText = document.querySelector("#name-output");
 console.log(spanText);
 
 
 inputText.addEventListener("input", event => {
-    spanText.textContent = event.currentTarget.value;
+    // spanText.textContent = event.currentTarget.value.trim();
+
+    if (spanText.textContent = "") {
+        return "Anonymous";
+    } else
+        spanText.textContent = event.currentTarget.value.trim();
 });

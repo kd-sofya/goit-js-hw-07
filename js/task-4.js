@@ -12,7 +12,7 @@ const inputs = form.querySelectorAll('input');
 for (const input of inputs) {
     if (!input.value.trim()) {
         alert('All form fields must be filled in');
-       
+        return;
     }
 }
     

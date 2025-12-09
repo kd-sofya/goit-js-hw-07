@@ -24,8 +24,8 @@ console.log("Number of categories:", el1.length);
 const el2 = document.querySelectorAll(".item");
 
 el2.forEach(element => {
-    const name = element.querySelector(".item-name");
-    const length = element.querySelectorAll(".item-list li").length;
+    const name = element.querySelector("h2");
+    const length = element.querySelectorAll("ul li").length;
 
     console.log("Category:", name.textContent);
     console.log("Elements:", length);
