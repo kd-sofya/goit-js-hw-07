@@ -5,9 +5,9 @@ console.dir(spanText);
 
 inputText.addEventListener("input", event => {
     // spanText.textContent = event.currentTarget.value.trim();
-
-    if (spanText.textContent === "") {
-        return "Anonymous";
+    const value = event.currentTarget.value.trim();
+    if (value === "") {
+        spanText.textContent = "Anonymous";
     } else
         spanText.textContent = event.currentTarget.value.trim();
 });
