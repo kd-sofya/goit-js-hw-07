@@ -21,8 +21,8 @@ for (const input of inputs) {
     const email = formValue.elements.email.value;
     const password = formValue.elements.password.value;
 
-    console.log(email);
-    console.log(password);
+    console.log({ email, password });
+    // console.log(password);
     
     form.reset();
 }

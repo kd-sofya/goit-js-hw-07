@@ -1,6 +1,6 @@
 const inputText = document.querySelector("#name-input");
 const spanText = document.querySelector("#name-output");
-console.log(spanText);
+console.dir(spanText);
 
 
 inputText.addEventListener("input", event => {
